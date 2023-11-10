@@ -17,7 +17,7 @@ func ReadFile(path string) string {
 		panic(err)
 	}
 
-	return string(bytes)
+	return strings.Trim(string(bytes), "\n")
 }
 
 func ReadInput(day int) string {
